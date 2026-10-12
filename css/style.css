@@ -7,8 +7,9 @@
 header {
   z-index: 1;
   width: 100%;
-  margin: 40px auto;
+  margin: 0 auto;
   position: fixed;
+  background-color: #000000;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 header .container {
@@ -53,6 +54,161 @@ header a::before {
   background-color: crimson;
   bottom: 20px;
   transition: 0.5s;
+}
+
+footer {
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+footer .container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1B1B1B;
+  height: 43vh;
+  width: 100%;
+  padding: 0 40px;
+}
+footer .box1 ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 15px;
+  margin-top: 40px;
+}
+footer .box1 li {
+  border: 1px solid #E9204F;
+  border-radius: 50%;
+  padding: 15px;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+footer .box1 li:hover {
+  color: #E9204F;
+  transform: translateY(-10px);
+}
+footer .box2 {
+  text-align: center;
+}
+footer .box2 h2 {
+  color: white;
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: 600;
+}
+footer .box3 button {
+  padding: 15px 30px;
+  border: 1px solid #E9204F;
+  background-color: #1B1B1B;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+footer .box3 button:hover::before {
+  width: 100%;
+}
+footer .box3 button::before {
+  content: "";
+  position: absolute;
+  background-color: #E9204F;
+  height: 54px;
+  top: 0;
+  left: 0;
+  width: 0%;
+  transition: 0.5s ease;
+  z-index: -1;
+}
+footer .container2 {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #161616;
+  color: white;
+}
+footer .box-left {
+  text-align: center;
+  transition: 0.5s;
+}
+footer .box-left:hover {
+  color: #E9204F;
+}
+footer .box-left h4 {
+  font-weight: 600;
+}
+footer .box-left a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  transition: 0.5s ease;
+}
+footer .box-left a:hover {
+  color: #E9204F;
+}
+footer .box-right {
+  text-align: center;
+}
+footer .box-right h4 {
+  transition: 0.5s;
+  font-weight: 600;
+}
+footer .box-right h4:hover {
+  color: #E9204F;
+}
+footer .box-right a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+footer .box-right a:hover {
+  color: #E9204F;
+}
+footer .container3 {
+  width: 100%;
+  margin: 0 auto;
+  height: 10vh;
+  background-color: #000000;
+}
+footer .box-text {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+footer .box-text ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+footer .box-text p {
+  margin-top: 20px;
+  color: #747474;
+}
+footer .box-text a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease;
+  position: relative;
+  font-weight: 400;
+}
+footer .box-text a:hover {
+  color: #E9204F;
+}
+footer .box-text a::before {
+  content: "";
+  position: absolute;
+  transition: 0.5s ease;
+  left: 0;
+  bottom: -5px;
+  background-color: #E9204F;
+  height: 2px;
+  width: 0%;
+}
+footer .box-text a:hover::before {
+  width: 70%;
 }
 
 #sectOne {
@@ -195,19 +351,71 @@ header a::before {
   cursor: pointer;
 }
 
-footer {
-  height: 68vh;
+#sectFour {
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 100%;
 }
-footer .boxes1 {
-  height: 40vh;
-  background-color: #1B1B1B;
+#sectFour .boxtext {
+  text-align: center;
+  padding: 7rem 0 0 3rem;
 }
-footer .boxes2 {
-  height: 18vh;
-  background-color: #161616;
+#sectFour .boxtext h1 {
+  font-weight: 800;
+  position: relative;
 }
-footer .boxes3 {
-  height: 10vh;
-  background-color: #000000;
+#sectFour .boxtext h1::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-10px);
+  background-color: #E9204F;
+  height: 40px;
+  width: 2px;
+}
+#sectFour .boxtext p {
+  color: #E9204F;
+  padding: 20px 0 0 0;
+}
+#sectFour .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 40px auto;
+}
+#sectFour .boxes .box1, #sectFour .boxes .box2, #sectFour .boxes .box3 {
+  position: relative;
+  overflow: hidden;
+}
+#sectFour .boxes .box1:hover img, #sectFour .boxes .box2:hover img, #sectFour .boxes .box3:hover img {
+  transform: scale(1.2);
+  filter: grayscale(0);
+}
+#sectFour .boxes .box1:hover i, #sectFour .boxes .box2:hover i, #sectFour .boxes .box3:hover i {
+  opacity: 1;
+}
+#sectFour .boxes .box1:hover .box-text, #sectFour .boxes .box2:hover .box-text, #sectFour .boxes .box3:hover .box-text {
+  transform: translatey(-50px);
+}
+#sectFour .boxes .box1 img, #sectFour .boxes .box2 img, #sectFour .boxes .box3 img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  transition: 0.4s;
+  filter: grayscale(1);
+}
+#sectFour .boxes .box-text {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  text-align: center;
+  color: white;
+  width: 90%;
+  transition: 0.2s ease-in-out;
+}
+#sectFour .boxes .box-text i {
+  opacity: 0;
+  font-size: 30px;
 }/*# sourceMappingURL=style.css.map */
